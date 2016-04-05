@@ -1,0 +1,59 @@
+.slide
+	position: relative
+	&-heading
+		position: relative
+		top: -300%
+		transition: all .8s ease
+		transition-delay: .8s
+		color: #fff
+		span
+			font-size: rem(24px)			
+			text-transform: uppercase
+			border-bottom: 1px solid rgba(255,255,255, 1)
+			border-top: 1px solid rgba(255,255,255, 1)
+			+screen(768px)
+				font-size: rem(44px)
+				border-bottom-width: 2px
+				border-top-width: 2px
+			+screen(1200px)
+				font-size: rem(60px)
+	&-link
+		display: inline-block
+		border: 2px solid rgba(255,255,255, .9)
+		text-transform: uppercase
+		font-size: rem(18px)
+		color: #fff
+		padding: 6px 36px
+		transition: all .8s ease
+		+screen(768px)
+			margin-top: 35px
+		&:hover, &:focus
+			color: darken($text-color, 50%)
+			background-color: rgba(255,255,255,.8)
+			text-decoration: none
+
+.active
+	.slide-heading
+		top: 0
+
+.slide-content
+	position: absolute
+	text-align: center
+	top: 20%
+	left: 0
+	width: 100%
+.owl-dots
+	position: absolute
+	bottom: 8%
+	right: 15%
+.owl-dot
+	width: 12px
+	height: 12px
+	border-radius: 50%
+	background-color: #000
+	border: 2px solid #fff
+	margin-bottom: 8px
+	&.active
+		background-color: #FFF
+		
+

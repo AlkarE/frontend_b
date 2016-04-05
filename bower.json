@@ -1,0 +1,11 @@
+{
+  "name": "gulp-project",
+  "description": "First Gulp Project",
+  "main": "",
+  "authors": [
+    "AlkarE <sam2@tut.by>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": ""
+}

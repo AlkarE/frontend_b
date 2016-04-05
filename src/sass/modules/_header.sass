@@ -1,0 +1,83 @@
+html
+	height: 100%
+body
+	border-top: 5px solid #7E7E7E
+	background-color: #fff
+	position: relative
+	min-height: 100%
+	&:after		
+		content: ''
+		opacity: .05
+		position: absolute
+		top: 0
+		left: 0
+		min-height: 100%
+		width: 100%
+		background:
+			image: url(../img/bg.png)
+			repeat: repeat
+			position: 0 0
+		z-index: -1
+.wrap
+	width: 960px
+	margin: 0 auto
+	position: relative
+	z-index: 1
+.page-header
+	margin-bottom: 30px
+.top-line
+	padding: 30px 0
+	+clearfix
+
+.form
+	input[type=text]
+		padding: 10px
+		border: 1px solid #ECECEC
+		background-color: #F3F3F3
+		width: 160px
+.form-top
+	.button
+		background-color: $main-color
+		color: #fff
+		margin-left: -3px
+		padding: 10px
+		text-transform: uppercase
+
+.button
+	border: none
+	outline: none
+	white-space: nowrap
+
+.form-right
+	float: right
+
+.menu
+	background-color: #F3F3F3
+	border: 1px solid #E7E7E7
+	margin: 0
+	padding: 0
+	list-style-type: none
+	+clearfix
+	li
+		float: left
+		width: 12.5%
+		text-align: center
+		background-color: #F3F3F3
+		transition: all .3s
+		&:hover
+			background-color: $main-color
+			a
+				color: #fff	
+		a
+			display: inline-block
+			text-transform: uppercase
+			transition: all .3s
+			padding: 13px 0
+			text-decoration: none
+			color: #b2b2b2
+	.active
+		background-color: $main-color
+		a
+			color: #fff	
+
+

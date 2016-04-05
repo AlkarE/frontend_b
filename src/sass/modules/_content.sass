@@ -1,0 +1,72 @@
+.post
+	color: $text-color
+	padding: 0 10px
+	&-title
+		background-image: url(../img/title-bg.png)		
+		margin-bottom: 16px
+		font-size: 16px
+		span
+			font-family: 'RobotoCondensedRegular'			
+			font-weight: 400
+			background-color: #fff
+			padding: 2px 10px 2px 29px
+			text-transform: uppercase
+			color: $heading-color
+			position: relative
+			line-height: 16px
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				height: 22px
+				width: 22px
+				background-color: $main-color
+	&-media
+		background-color: #fff
+		float: left
+		padding: 1px
+		border: 1px solid #DBDBDB
+		width: 140px
+	&-text
+		padding-left: 160px
+	p
+		margin-top: 0
+	.more
+		color: $link-color
+		text-decoration: underline
+		&:hover, &:focus
+			text-decoration: none
+	q
+		font-style: italic
+	cite
+		font-style: normal
+		color: $link-color
+
+.post-preview	
+	.post-media
+		width: 44px
+	.post-text
+		padding-left: 54px		
+	p
+		margin-top: 5px
+		font-size: 12px
+		line-height: 14px
+.post-link
+	color: $link-color
+	font-family: 'RobotoCondensedRegular'
+	text-decoration: none
+	text-transform: uppercase
+	transition: all .3s
+	&:hover
+		text-decoration: underline
+		color: $main-color
+.post-images
+	display: table
+	width: 100%
+	span
+		display: table-cell
+.post
+	table
+		width: 100%
+		td
+			text-align: center

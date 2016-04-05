@@ -1,0 +1,24 @@
+@import "base/vars"
+.btn
+  cursor: pointer
+  color: $text-color
+  background-color: transparent
+  display: inline-block
+  font-size: rem(18px)
+  line-height: rem(18px)
+  padding: 17px 35px
+  border: 2px solid $text-color
+  white-space: nowrap
+  text-transform: uppercase
+  transition: all .3s
+  text-align: center
+  vertical-align: middle
+  &:hover, &:focus, &:active
+    text-decoration: none
+    color: $text-color
+  &-default
+    color: $accent-color
+    border-color: $accent-color
+    &:hover, &:focus, &:active
+      color: $btn-default-color-hover
+      background-color: $btn-default-bg-hover

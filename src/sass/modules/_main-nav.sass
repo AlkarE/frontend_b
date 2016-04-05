@@ -1,0 +1,75 @@
+@import "../../app/libs/jQuery.mmenu/dist/css/jquery.mmenu.all"
+.nav
+  min-height: 70px
+  position: relative
+  transition: all .3s
+  &-dark
+    background-color: $navbar-bg
+ 
+.navbar
+  margin: 0
+  padding: 0
+  list-style-type: none
+  > li
+    +screen(1200px)
+      display: inline-block
+      margin-left: 38px
+      vertical-align: middle
+      &:first-child
+        margin-left: 0
+      &.active
+        > .navbar-link
+          color: $navbar-link-hover
+  &-out
+    min-height: 70px
+  &-fixed
+    position: fixed
+    top: 0
+.navbar-link
+  color: #fff
+  text-transform: uppercase
+  display: block
+  line-height: 70px
+  &:hover
+    color: $navbar-link-hover
+    text-decoration: none
+ 
+.nav-header
+  float: left
+.nav-brand
+  display: block
+  line-height: 60px
+  
+.navbar-wrap
+  +screen(1200px)
+    float: right
+    
+.navbar
+  display: none
+  // &.open
+  //   display: block
+  // +screen(1200px)
+  //   display: block
+
+.menu-toggle
+  position: absolute
+  top: 30%
+  right: 30px
+  background-color: transparent
+  border: 0
+  display: block
+  +screen(1200px)
+    display: none
+  &.on
+    display: block
+.icon-bar
+  width: 30px
+  height: 4px
+  display: block
+  background-color: #fff
+  margin-bottom: 5px
+
+// .navbar-wrap
+//   display: none
+//   +screen(1200px)
+//     display: inline-block
